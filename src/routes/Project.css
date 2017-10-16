@@ -1,0 +1,76 @@
+.root {
+  width: 360px;
+  height: 550px;
+  padding: 20px 20px 0;
+  position: relative;
+}
+
+.head {
+  width: 100%;
+}
+
+.link {
+  display: inline-block;
+  height: 30px;
+}
+
+.content {
+  width: 100%;
+  height: calc(100% - 50px);
+  margin-top: 10px;
+  position: relative;
+  overflow-y: auto;
+}
+
+.project {
+  width: 100%;
+  line-height: 25px;
+  padding: 10px;
+  font-size: 14px;
+  font-family: Consolas, Menlo, Courier, monospace;
+  border-bottom: 1px dashed #ddd;
+  position: relative;
+  cursor: pointer;
+}
+
+.project:hover {
+  background-color: #eee;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.type {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: normal;
+  padding: 0 8px;
+  background-color: #aaa;
+  line-height: 18px;
+  border-radius: 10px;
+  margin-left: 10px;
+  color: #fff;
+}
+
+.dest {
+  font-size: 12px;
+  word-break: break-all;
+}
+
+.delete {
+  display: none!important;
+  color: #fff!important;
+  background-color: #f04134!important;
+  border-color: #f04134!important;
+}
+
+.delete:hover {
+  color: #fff!important;
+  background-color: rgba(240, 65, 52, 0.7)!important;
+  border-color: rgba(240, 65, 52, 0.7)!important;
+}
+
+.project:hover .delete {
+  display: block!important;
+}
